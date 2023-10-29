@@ -1,6 +1,7 @@
 
 import Navbar from './components/Navbar'
 import Bloglist from './components/Bloglist'
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
     <Navbar />
     <Bloglist />
+    <Analytics />
      </>
   )
 }
