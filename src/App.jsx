@@ -1,6 +1,6 @@
 
 import Navbar from './components/Navbar'
-import Bloglist from './components/bloglist'
+import Bloglist from './components/Bloglist'
 
 function App() {
 
