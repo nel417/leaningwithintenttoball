@@ -1,15 +1,16 @@
 
 import Navbar from './components/Navbar'
 import Bloglist from './components/Bloglist'
-import { Analytics } from '@vercel/analytics/react';
+import { inject } from '@vercel/analytics';
 
 function App() {
+  inject();
 
   return (
+
     <>
     <Navbar />
     <Bloglist />
-    <Analytics />
      </>
   )
 }
