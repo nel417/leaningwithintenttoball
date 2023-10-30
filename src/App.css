@@ -28,7 +28,7 @@ html, body {
 }
 
 .items {
-  position: absolute;
+  position: relative;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -199,5 +199,45 @@ color: #fff;
   .item-panel {
     width: 100%; /* Make the item panel take up 100% of the screen width */
     margin: 0; /* Remove any margin */
+  }
+}
+
+.footer {
+  font-family: 'VT323', monospace;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 2rem;
+  }
+
+
+@media (max-width: 847px) {
+  .footer p {
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .items {
+    width: 100%; /* Full width for items on mobile */
+    bottom: 0; /* Remove the 'bottom' property */
+  }
+
+  .container {
+    flex-direction: column; /* Stack items on top of each other */
+    align-items: center; /* Center items horizontally */
+  }
+}
+
+/* Media query for tablet screens */
+@media (max-width: 1024px) {
+  .items {
+    width: 100%; /* Full width for items on tablet */
+    bottom: 0; /* Remove the 'bottom' property */
   }
 }
