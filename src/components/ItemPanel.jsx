@@ -25,7 +25,7 @@ const ItemPanel = ({ selectedItem, onClose }) => {
               ))
             )}
           </div>
-          <p>{selectedItem ? selectedItem.itemCopy : ''}</p>
+          <p dangerouslySetInnerHTML={{ __html: selectedItem ? selectedItem.itemCopy : '' }} />
         </div>
       </div>
       <button className="close-button" onClick={onClose}>
