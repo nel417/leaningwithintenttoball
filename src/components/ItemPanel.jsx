@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../App.css'; // Import your CSS file
+import '../App.css';
 
 const ItemPanel = ({ selectedItem, onClose }) => {
   const [isVisible, setIsVisible] = useState(false);
