@@ -4,10 +4,12 @@ import crumb2 from '../public/crumbsuckers/IMG_2606.jpg'
 import bjork1 from '../public/bjork/IMG_2991.jpg'
 import bjork2 from '../public/bjork/IMG_2992.jpg'
 import bjork3 from '../public/bjork/IMG_2993.jpg'
+import alison from '../public/allisonshalo/allison.jpg'
 
 import { smithsCopy } from './copy/smithsCopy';
 import { crumbsuckersCopy } from './copy/crumbsuckersCopy';
 import { bjorkCopy } from './copy/bjorkCopy';
+import { alisonCopy } from './copy/alisonCopy'
 
 export const blogData = [
     {
@@ -33,5 +35,13 @@ export const blogData = [
       itemYear: '1998',
       itemImg: [bjork1, bjork2, bjork3],
       itemCopy: bjorkCopy
+    },
+    {
+      id: 4,
+      itemIndex: '04',
+      itemName: 'Alisons Halo - "Self Titled"',
+      itemYear: '199X',
+      itemImg: [alison],
+      itemCopy: alisonCopy
     },
   ];
